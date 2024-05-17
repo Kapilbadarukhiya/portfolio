@@ -246,19 +246,22 @@
           <div class="page-back">
             <h1 class="title">Conatct Me!</h1>
 
-            <div class="contact-box">
-              <form action="#">
+             <div class="contact-box">
+              <form  action="https://formspree.io/f/mzbnwwkv"
+              method="POST" >
                 <input
                   type="text"
                   class="field"
                   placeholder="Full Name"
                   required
+                  name="name"
                 />
                 <input
                   type="email"
                   class="field"
                   placeholder="Email-Address"
                   required
+                  name="email"
                 />
                 <textarea
                   name=""
@@ -268,8 +271,9 @@
                   class="field"
                   placeholder="Your Message"
                   required
+                  name="message"
                 ></textarea>
-                <input type="submit" class="btn" value="send Message" />
+                <input type="submit" class="btn" value="send Message"/>
               </form>
             </div>
             <span class="number-page">6</span>
