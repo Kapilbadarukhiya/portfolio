@@ -87,3 +87,25 @@ pages.forEach((_, index) => {
     }, 500);
   }, (index + 1) * 200 + 2100);
 });
+const form = document.querySelector("form");
+
+function sendEmail(){
+  Email.send({
+     Host : "smtp.gmail.com",
+     username : "kapilbadarukhiya@gmail.com",
+     password : "6F59AD1E023762120ECA66DF5F0B0DBB5D4F",
+     To : "kapilbadarukhiya@gmail.com",
+     From : "kapilbadarukhiya@gmail.com",
+     Subject : "New Contaact",
+     Body : "this is body"
+
+  }).then(
+    message => alert(message)
+  );
+}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  sendEmail();
+})
